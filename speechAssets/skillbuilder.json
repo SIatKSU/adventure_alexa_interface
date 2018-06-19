@@ -1,0 +1,93 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "adventure creator",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop game",
+                        "end game",
+                        "goodbye",
+                        "bye"
+                    ]
+                },
+                {
+                    "name": "ActionIntent",
+                    "slots": [
+                        {
+                            "name": "userAction",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "I {userAction}",
+                        "choose {userAction}",
+                        "go {userAction}",
+                        "do {userAction}"
+                    ]
+                },
+                {
+                    "name": "ListIntent",
+                    "slots": [],
+                    "samples": [
+                        "list games",
+                        "list",
+                        "list my games",
+                        "what games can I play"
+                    ]
+                },
+                {
+                    "name": "PlayGame",
+                    "slots": [
+                        {
+                            "name": "gameNumber",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "let's play game {gameNumber}",
+                        "game {gameNumber}",
+                        "play game {gameNumber}"
+                    ]
+                },
+                {
+                    "name": "RefreshIntent",
+                    "slots": [],
+                    "samples": [
+                        "refresh",
+                        "refresh list",
+                        "refresh games",
+                        "refresh game list"
+                    ]
+                },
+                {
+                    "name": "LinkAccountIntent",
+                    "slots": [],
+                    "samples": [
+                        "link account"
+                    ]
+                },
+                {
+                    "name": "RepeatIntent",
+                    "slots": [],
+                    "samples": [
+                        "what",
+                        "can you repeat that",
+                        "please repeat",
+                        "repeat"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
